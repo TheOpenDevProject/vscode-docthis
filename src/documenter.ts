@@ -232,7 +232,7 @@ export class Documenter implements vs.Disposable {
         const fileName = utils.fixWinPath(document.fileName);
         const fileText = document.getText();
         this._languageServiceHost.setCurrentFile(fileName, fileText);
-        return this._services.getSourceFile(fileName);
+        return this._services.getProgram().getSourceFile(fileName);
     }
 
     private _documentNode(sb: utils.StringBuilder, node: ts.Node, editor: vs.TextEditor, sourceFile: ts.SourceFile) {

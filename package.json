@@ -117,7 +117,7 @@
   "dependencies": {
     "openurl": "^1.1.1",
     "serialize-error": "^2.0.0",
-    "typescript": "^1.8.10"
+    "typescript": "^2.0.9"
   },
   "bugs": {
     "url": "https://github.com/joelday/vscode-docthis/issues"

@@ -9,7 +9,7 @@ export class LanguageServiceHost implements ts.LanguageServiceHost {
 
     constructor() {
         this._fileNames = [];
-        this._files = {};
+        this._files = ts.Map<string, number>("", 1);
     }
 
     setCurrentFile(fileName: string, fileText: string) {
